@@ -11,9 +11,9 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <!-- Id for Channel Notification -->   
     <meta name="userId" content="{{ Auth::check() ? Auth::user()->id : ''}}">  
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Sistema Ventas - IncanatoIT</title>
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js">
     <!-- Icons -->
     <link href="css/plantilla.css" rel="stylesheet">
@@ -70,13 +70,11 @@
         <!-- /Fin del contenido principal -->
     </div>   
     </div>
-    <!--
+
     <footer class="app-footer">
-        <span><a href="http://www.incanatoit.com/">IncanatoIT</a> &copy; 2017</span>
-        <span class="ml-auto">Desarrollado por <a href="http://www.incanatoit.com/">IncanatoIT</a></span>
+        <span><a href="http://www.incanatoit.com/">Nicolabs</a> &copy; {{ \Carbon\Carbon::now()->format('d/m/Y') }}</span>
+        <span class="ml-auto">Desarrollado por: <a href="https://nicolabs.cl">Nicolabs</a></span>
     </footer>
-    -->
-    
 
     <script src="js/app.js"></script>
     <script src="js/plantilla.js"></script>

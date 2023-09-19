@@ -30,6 +30,7 @@ Vue.component('consultaingreso', require('./components/ConsultaIngreso.vue'));
 Vue.component('consultaventa', require('./components/ConsultaVenta.vue'));
 Vue.component('ayuda', require('./components/Ayuda.vue'));
 Vue.component('acerca', require('./components/Acerca.vue'));
+Vue.component('test', require('./components/Test.vue'));
 
 const app = new Vue({
     el: '#app',
